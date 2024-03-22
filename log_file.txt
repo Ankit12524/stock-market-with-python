@@ -1,0 +1,308 @@
+[2024-03-22 12:23:49,316][DEBUG] - Starting new HTTPS connection (1): api.icicidirect.com:443
+[2024-03-22 12:23:49,316][DEBUG] - Starting new HTTPS connection (1): api.icicidirect.com:443
+[2024-03-22 12:23:49,485][DEBUG] - https://api.icicidirect.com:443 "GET /breezeapi/api/v1/customerdetails HTTP/1.1" 200 567
+[2024-03-22 12:23:49,485][DEBUG] - https://api.icicidirect.com:443 "GET /breezeapi/api/v1/customerdetails HTTP/1.1" 200 567
+[2024-03-22 12:23:49,491][DEBUG] - Starting new HTTPS connection (1): traderweb.icicidirect.com:443
+[2024-03-22 12:23:49,491][DEBUG] - Starting new HTTPS connection (1): traderweb.icicidirect.com:443
+[2024-03-22 12:23:49,662][DEBUG] - https://traderweb.icicidirect.com:443 "GET /Content/File/txtFile/ScripFile/StockScriptNew.csv HTTP/1.1" 200 3009646
+[2024-03-22 12:23:49,662][DEBUG] - https://traderweb.icicidirect.com:443 "GET /Content/File/txtFile/ScripFile/StockScriptNew.csv HTTP/1.1" 200 3009646
+[2024-03-22 12:24:41,675][DEBUG] - Initiating All Variables Initial Values are :-
+            old_price_long = 0
+            old_price_short = 0
+            target_prencantage = 0.1
+            stop_loss_precentage = 0.2
+            stop_loss_long = False
+            stop_loss_short = False
+            long_hold = False
+            short_hold = False
+            trade_book = []
+            qty = 30
+[2024-03-22 12:24:41,675][DEBUG] - Initiating All Variables Initial Values are :-
+            old_price_long = 0
+            old_price_short = 0
+            target_prencantage = 0.1
+            stop_loss_precentage = 0.2
+            stop_loss_long = False
+            stop_loss_short = False
+            long_hold = False
+            short_hold = False
+            trade_book = []
+            qty = 30
+[2024-03-22 12:24:59,163][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:24:59,163][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:25:51,762][DEBUG] - Starting new HTTPS connection (1): api.icicidirect.com:443
+[2024-03-22 12:25:51,939][DEBUG] - https://api.icicidirect.com:443 "GET /breezeapi/api/v1/customerdetails HTTP/1.1" 200 567
+[2024-03-22 12:25:51,942][DEBUG] - Starting new HTTPS connection (1): traderweb.icicidirect.com:443
+[2024-03-22 12:25:52,098][DEBUG] - https://traderweb.icicidirect.com:443 "GET /Content/File/txtFile/ScripFile/StockScriptNew.csv HTTP/1.1" 200 3009646
+[2024-03-22 12:25:57,663][DEBUG] - Initiating All Variables Initial Values are :-
+            old_price_long = 0
+            old_price_short = 0
+            target_prencantage = 0.1
+            stop_loss_precentage = 0.2
+            stop_loss_long = False
+            stop_loss_short = False
+            long_hold = False
+            short_hold = False
+            trade_book = []
+            qty = 30
+[2024-03-22 12:26:05,294][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:00,499][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:50,966][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:50,971][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:51,918][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:51,938][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:56,458][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:56,462][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:57,922][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:27:57,942][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:00,058][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:00,069][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:00,073][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:01,131][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:01,132][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:01,703][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:01,704][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:03,696][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:03,698][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:05,111][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:05,112][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:07,921][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:07,961][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:09,923][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:09,925][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:12,078][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:12,081][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:15,523][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:15,525][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:16,923][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:16,924][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:18,919][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:18,923][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:20,102][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:20,105][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:21,106][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:21,106][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:23,673][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:23,674][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:25,706][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:25,708][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:28,938][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:28,939][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:33,935][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:33,936][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:34,935][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:34,936][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:35,943][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:35,944][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:36,943][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:28:36,944][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:03,366][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:03,368][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:05,110][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:05,381][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:05,383][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:06,543][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:06,544][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:08,731][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:08,732][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:12,944][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:12,956][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:15,256][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:15,261][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:16,268][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:16,270][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:17,277][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:17,278][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:19,578][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:19,583][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:20,665][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:20,666][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:22,296][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:22,297][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:25,287][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:25,288][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:26,410][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:26,412][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:27,522][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:27,522][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:31,031][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:31,033][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:31,992][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:31,993][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:33,110][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:33,112][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:34,263][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:34,263][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:35,110][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:35,111][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:36,451][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:36,455][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:37,506][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:37,507][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:38,489][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:38,490][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:39,663][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:39,665][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:39,974][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:39,976][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:40,936][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:40,938][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:41,918][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:41,920][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:42,964][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:30:42,969][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:37:01,281][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:38:01,367][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:39:00,781][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:39:59,485][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:40:59,870][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:42:00,298][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:43:02,584][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:44:01,992][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:45:04,707][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:45:59,241][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:45:59,242][INFO] - '*******,datetime : 2024-03-22 12:45:00, open : 46905.0, high : 46920.0, low : 46894.3, close : 46913.35,'*******
+
+[2024-03-22 12:47:03,187][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:47:03,187][INFO] - '*******,datetime : 2024-03-22 12:46:00, open : 46913.35, high : 46918.3, low : 46908.75, close : 46910.8,'*******
+
+[2024-03-22 12:48:00,094][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:48:00,094][INFO] - '*******,datetime : 2024-03-22 12:47:00, open : 46910.8, high : 46920.0, low : 46907.7, close : 46920.0,'*******
+
+[2024-03-22 12:49:03,986][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:49:03,986][INFO] - '*******,datetime : 2024-03-22 12:48:00, open : 46920.0, high : 46925.0, low : 46912.85, close : 46924.35,'*******
+
+[2024-03-22 12:49:03,986][INFO] - % Change in Price for Long position = 0
+[2024-03-22 12:49:03,987][INFO] - % Change in Price for Short position = 0 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:50:00,539][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:50:00,539][INFO] - '*******,datetime : 2024-03-22 12:49:00, open : 46924.35, high : 46928.7, low : 46919.95, close : 46920.0,'*******
+
+[2024-03-22 12:50:00,540][INFO] - % Change in Price for Long position = 0
+[2024-03-22 12:50:00,541][INFO] - % Change in Price for Short position = 0 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:51:05,317][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:51:05,317][INFO] - '*******,datetime : 2024-03-22 12:50:00, open : 46920.0, high : 46923.7, low : 46914.3, close : 46915.0,'*******
+
+[2024-03-22 12:51:05,318][INFO] - % Change in Price for Long position = 0
+[2024-03-22 12:51:05,318][INFO] - % Change in Price for Short position = 0 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:51:59,958][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:51:59,958][INFO] - '*******,datetime : 2024-03-22 12:51:00, open : 46915.0, high : 46915.15, low : 46907.0, close : 46911.0,'*******
+
+[2024-03-22 12:51:59,959][INFO] - % Change in Price for Long position = 0
+[2024-03-22 12:51:59,959][INFO] - % Change in Price for Short position = 0 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:53:05,578][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:53:05,578][INFO] - '*******,datetime : 2024-03-22 12:52:00, open : 46911.0, high : 46914.7, low : 46902.0, close : 46906.8,'*******
+
+[2024-03-22 12:53:05,580][INFO] - % Change in Price for Long position = 0
+[2024-03-22 12:53:05,582][INFO] - % Change in Price for Short position = 0 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:53:59,474][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 0,old_price_short : 0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : False,short_hold : False,trade_book : [],qty : 30
+[2024-03-22 12:53:59,474][INFO] - '*******,datetime : 2024-03-22 12:53:00, open : 46906.8, high : 46918.45, low : 46903.4, close : 46916.0,'*******
+
+[2024-03-22 12:53:59,476][INFO] - % Change in Price for Long position = 0
+[2024-03-22 12:53:59,477][INFO] - % Change in Price for Short position = 0 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:53:59,480][INFO] - Going Long Since not Holding and neither stoploss is triggered values :: long_hold : False, stop_loss_long : False
+[2024-03-22 12:53:59,481][INFO] - Buying at a price 46916.0 * 30. total buy price 1407480.0 
+ 
+[2024-03-22 12:53:59,483][DEBUG] - Setting global old_price_long to 46916.0 and long_hold to True
+[2024-03-22 12:53:59,483][INFO] - Going Short since Both short_hold : False and stop_loss_short : False are False. 
+[2024-03-22 12:53:59,485][INFO] - Shorting at a price 46916.0. total buy price 1407480.0 
+ 
+[2024-03-22 12:53:59,486][DEBUG] - Setting old_short_price to 46916.0. value after setting 46916.0
+[2024-03-22 12:55:03,322][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 12:55:03,322][INFO] - '*******,datetime : 2024-03-22 12:54:00, open : 46916.0, high : 46944.95, low : 46915.0, close : 46936.95,'*******
+
+[2024-03-22 12:55:03,325][INFO] - % Change in Price for Long position = 0.044654275726824726
+[2024-03-22 12:55:03,327][INFO] - % Change in Price for Short position = 0.044654275726824726 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:55:59,916][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 12:55:59,917][INFO] - '*******,datetime : 2024-03-22 12:55:00, open : 46936.95, high : 46942.8, low : 46929.55, close : 46930.0,'*******
+
+[2024-03-22 12:55:59,920][INFO] - % Change in Price for Long position = 0.02984056611816864
+[2024-03-22 12:55:59,922][INFO] - % Change in Price for Short position = 0.02984056611816864 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:57:01,814][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 12:57:01,814][INFO] - '*******,datetime : 2024-03-22 12:56:00, open : 46930.0, high : 46940.7, low : 46920.0, close : 46934.95,'*******
+
+[2024-03-22 12:57:01,816][INFO] - % Change in Price for Long position = 0.04039133770994349
+[2024-03-22 12:57:01,818][INFO] - % Change in Price for Short position = 0.04039133770994349 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:57:59,572][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 12:57:59,572][INFO] - '*******,datetime : 2024-03-22 12:57:00, open : 46934.95, high : 46934.95, low : 46920.1, close : 46920.1,'*******
+
+[2024-03-22 12:57:59,573][INFO] - % Change in Price for Long position = 0.008739022934603428
+[2024-03-22 12:57:59,573][INFO] - % Change in Price for Short position = 0.008739022934603428 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 12:59:07,856][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 12:59:07,856][INFO] - '*******,datetime : 2024-03-22 12:58:00, open : 46920.1, high : 46933.45, low : 46920.1, close : 46925.3,'*******
+
+[2024-03-22 12:59:07,859][INFO] - % Change in Price for Long position = 0.019822661778503944
+[2024-03-22 12:59:07,862][INFO] - % Change in Price for Short position = 0.019822661778503944 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:00:03,037][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 13:00:03,037][INFO] - '*******,datetime : 2024-03-22 12:59:00, open : 46925.3, high : 46933.35, low : 46915.05, close : 46915.05,'*******
+
+[2024-03-22 13:00:03,039][INFO] - % Change in Price for Long position = -0.0020248955580123833
+[2024-03-22 13:00:03,040][INFO] - % Change in Price for Short position = -0.0020248955580123833 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:01:03,382][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 13:01:03,382][INFO] - '*******,datetime : 2024-03-22 13:00:00, open : 46915.05, high : 46922.3, low : 46910.05, close : 46919.65,'*******
+
+[2024-03-22 13:01:03,383][INFO] - % Change in Price for Long position = 0.007779861880811354
+[2024-03-22 13:01:03,384][INFO] - % Change in Price for Short position = 0.007779861880811354 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:02:00,376][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46916.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}],qty : 30
+[2024-03-22 13:02:00,377][INFO] - '*******,datetime : 2024-03-22 13:01:00, open : 46919.65, high : 46968.05, low : 46919.65, close : 46965.0,'*******
+
+[2024-03-22 13:02:00,379][INFO] - % Change in Price for Long position = 0.10444198141359026
+[2024-03-22 13:02:00,383][INFO] - % Change in Price for Short position = 0.10444198141359026 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:02:00,384][INFO] - Exiting Long Trade since Both the Condition Satisfied per_change_long = 0.10444198141359026 is greater than target_precentage = 0.1 and Holding Position for Long is = True
+[2024-03-22 13:02:00,387][DEBUG] - setting long_hold to False.value after setting false = False
+[2024-03-22 13:02:00,387][INFO] - Sold at 46965.0 * 30 = 1408950.0. Booked Profit of 49.0 * 30 = 1470.0
+
+[2024-03-22 13:02:00,388][DEBUG] - Appended to Trade book ('date':2024-03-22 13:01:00,'type':'exit long','price':46965.0,'order_value':1408950,'profit':1470.0)
+[2024-03-22 13:02:00,389][INFO] - Going Long Since not Holding and neither stoploss is triggered values :: long_hold : False, stop_loss_long : False
+[2024-03-22 13:02:00,390][INFO] - Buying at a price 46965.0 * 30. total buy price 1408950.0 
+ 
+[2024-03-22 13:02:00,392][DEBUG] - Setting global old_price_long to 46965.0 and long_hold to True
+[2024-03-22 13:03:04,496][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:03:04,496][INFO] - '*******,datetime : 2024-03-22 13:02:00, open : 46970.45, high : 46988.65, low : 46957.1, close : 46976.3,'*******
+
+[2024-03-22 13:03:04,497][INFO] - % Change in Price for Long position = 0.02406047056319155
+[2024-03-22 13:03:04,498][INFO] - % Change in Price for Short position = 0.12852758120897542 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:03:59,073][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:03:59,073][INFO] - '*******,datetime : 2024-03-22 13:03:00, open : 46976.3, high : 46986.5, low : 46971.15, close : 46975.0,'*******
+
+[2024-03-22 13:03:59,074][INFO] - % Change in Price for Long position = 0.021292451825827743
+[2024-03-22 13:03:59,075][INFO] - % Change in Price for Short position = 0.12575667149799644 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:05:02,013][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:05:02,013][INFO] - '*******,datetime : 2024-03-22 13:04:00, open : 46975.0, high : 46978.9, low : 46962.15, close : 46972.0,'*******
+
+[2024-03-22 13:05:02,014][INFO] - % Change in Price for Long position = 0.01490471627807942
+[2024-03-22 13:05:02,015][INFO] - % Change in Price for Short position = 0.11936226447267456 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:06:02,645][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:06:02,645][INFO] - '*******,datetime : 2024-03-22 13:05:00, open : 46972.0, high : 46975.0, low : 46955.0, close : 46964.05,'*******
+
+[2024-03-22 13:06:02,646][INFO] - % Change in Price for Long position = -0.002022782923447439
+[2024-03-22 13:06:02,647][INFO] - % Change in Price for Short position = 0.10241708585557786 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:07:06,133][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:07:06,133][INFO] - '*******,datetime : 2024-03-22 13:06:00, open : 46964.4, high : 46965.0, low : 46941.0, close : 46945.5,'*******
+
+[2024-03-22 13:07:06,135][INFO] - % Change in Price for Long position = -0.0415202810603641
+[2024-03-22 13:07:06,136][INFO] - % Change in Price for Short position = 0.06287833574899822 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:08:00,414][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:08:00,414][INFO] - '*******,datetime : 2024-03-22 13:07:00, open : 46945.5, high : 46951.8, low : 46926.35, close : 46935.25,'*******
+
+[2024-03-22 13:08:00,415][INFO] - % Change in Price for Long position = -0.06334504418183755
+[2024-03-22 13:08:00,416][INFO] - % Change in Price for Short position = 0.041030778412481886 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:09:00,540][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:09:00,540][INFO] - '*******,datetime : 2024-03-22 13:08:00, open : 46940.05, high : 46950.0, low : 46932.0, close : 46932.45,'*******
+
+[2024-03-22 13:09:00,541][INFO] - % Change in Price for Long position = -0.0693069306930755
+[2024-03-22 13:09:00,541][INFO] - % Change in Price for Short position = 0.035062665188841956 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:10:00,126][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:10:00,127][INFO] - '*******,datetime : 2024-03-22 13:09:00, open : 46932.45, high : 46950.0, low : 46926.45, close : 46949.0,'*******
+
+[2024-03-22 13:10:00,130][INFO] - % Change in Price for Long position = -0.03406792292132439
+[2024-03-22 13:10:00,133][INFO] - % Change in Price for Short position = 0.07033847727854037 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:11:01,251][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:11:01,252][INFO] - '*******,datetime : 2024-03-22 13:10:00, open : 46949.0, high : 46955.0, low : 46945.0, close : 46951.3,'*******
+
+[2024-03-22 13:11:01,255][INFO] - % Change in Price for Long position = -0.02917065900137781
+[2024-03-22 13:11:01,257][INFO] - % Change in Price for Short position = 0.07524085599795999 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:12:02,464][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:12:02,465][INFO] - '*******,datetime : 2024-03-22 13:11:00, open : 46951.3, high : 46951.3, low : 46938.6, close : 46950.0,'*******
+
+[2024-03-22 13:12:02,466][INFO] - % Change in Price for Long position = -0.031938677738741615
+[2024-03-22 13:12:02,468][INFO] - % Change in Price for Short position = 0.07246994628698099 NOTE :: Negetive means profit in short trade same formula has been used to both long and short

@@ -1,1 +1,1 @@
-open,high,low,close
+open,high,low,closeopen,high,low,closeopen,high,low,close

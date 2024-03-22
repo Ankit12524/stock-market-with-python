@@ -306,3 +306,8 @@
 
 [2024-03-22 13:12:02,466][INFO] - % Change in Price for Long position = -0.031938677738741615
 [2024-03-22 13:12:02,468][INFO] - % Change in Price for Short position = 0.07246994628698099 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-22 13:13:02,847][DEBUG] - variables values when running on_ticks getting ticks :- old_price_long : 46965.0,old_price_short : 46916.0,target_prencantage : 0.1,stop_loss_precentage : 0.2,long_hold : True,short_hold : True,trade_book : [{'date': '2024-03-22 12:53:00', 'type': 'long', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 12:53:00', 'type': 'short', 'price': 46916.0, 'order_value': 1407480, 'profit': 0}, {'date': '2024-03-22 13:01:00', 'type': 'exit long', 'price': 46965.0, 'order_value': 1408950, 'profit': 1470.0}, {'date': '2024-03-22 13:01:00', 'type': 'long', 'price': 46965.0, 'order_value': 1408950, 'profit': 0}],qty : 30
+[2024-03-22 13:13:02,847][INFO] - '*******,datetime : 2024-03-22 13:12:00, open : 46950.0, high : 46952.6, low : 46940.35, close : 46952.6,'*******
+
+[2024-03-22 13:13:02,848][INFO] - % Change in Price for Long position = -0.0264026402640295
+[2024-03-22 13:13:02,848][INFO] - % Change in Price for Short position = 0.07801176570892349 NOTE :: Negetive means profit in short trade same formula has been used to both long and short

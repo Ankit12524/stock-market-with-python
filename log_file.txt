@@ -1015,3 +1015,11 @@
 
 [2024-03-22 15:30:00,255][INFO] - % Change in Price for Long position = -0.22453275499138559
 [2024-03-22 15:30:00,256][INFO] - % Change in Price for Short position = 0.020035808679344902 NOTE :: Negetive means profit in short trade same formula has been used to both long and short
+[2024-03-23 23:46:41,043][DEBUG] - Starting new HTTPS connection (1): api.icicidirect.com:443
+[2024-03-23 23:46:41,236][DEBUG] - https://api.icicidirect.com:443 "GET /breezeapi/api/v1/customerdetails HTTP/1.1" 200 567
+[2024-03-23 23:46:41,242][DEBUG] - Starting new HTTPS connection (1): traderweb.icicidirect.com:443
+[2024-03-23 23:46:41,407][DEBUG] - https://traderweb.icicidirect.com:443 "GET /Content/File/txtFile/ScripFile/StockScriptNew.csv HTTP/1.1" 200 3120690
+[2024-03-23 23:50:24,856][DEBUG] - Starting new HTTPS connection (1): api.icicidirect.com:443
+[2024-03-23 23:50:37,018][DEBUG] - https://api.icicidirect.com:443 "GET /breezeapi/api/v1/historicalcharts HTTP/1.1" 200 35722112
+[2024-03-23 23:52:31,658][DEBUG] - Starting new HTTPS connection (1): api.icicidirect.com:443
+[2024-03-23 23:52:36,829][DEBUG] - https://api.icicidirect.com:443 "GET /breezeapi/api/v1/historicalcharts HTTP/1.1" 200 17772101

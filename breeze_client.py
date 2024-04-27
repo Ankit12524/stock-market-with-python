@@ -226,3 +226,12 @@ class icici_client:
 
     return data
 
+
+
+def read_csv(filename):
+
+  df = pd.read_csv(filename)
+  df['datetime'] = pd.to_datetime(df['datetime'])
+  df.set_index('datetime',inplace = True)
+  
+  return df

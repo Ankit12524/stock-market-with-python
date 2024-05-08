@@ -225,6 +225,76 @@ class icici_client:
     data.rename(columns={'close': 'Close','open':'Open','high':'High','low':'Low','volume':'Volume'},inplace=True)
 
     return data
+  
+  def second_data(self,symbol,date=dt.datetime.today().strftime('%Y-%m-%d'),exchange_code='NSE',product_type ='cash',expiry_date=False,right=False,strike_price=False):
+    
+    #date value check:
+    try:
+      for x in date.split('-'):
+        int(x)
+    except Exception as e:
+      print(f'Error : {e}')
+      raise('Date Should be in format "YYYY-MM-DD" for Example : {date}')
+
+
+    start_time = dt.datetime(year = 2024,month = 1, day = 1,hour=9,minute=0,second=0)
+
+    dfs = []
+    if exchange_code=='NSE':
+      for x in range(1,27):
+        
+        end_time = start_time + dt.timedelta(minutes=15)
+
+        s_time = start_time.strftime('%H:%M')
+        e_time = end_time.strftime('%H:%M')
+        
+
+        result = self.breeze.get_historical_data_v2(interval='1second',
+                                  from_date= f"{date}T{s_time}:00.000Z",
+                                  to_date= f"{date}T{e_time}:00.000Z",
+                                  stock_code= symbol,
+                                  exchange_code= exchange_code,
+                                  product_type=product_type,
+                                  )
+        
+        start_time = end_time
+
+        if result['Error'] == None and result['Status']==200:
+          data = result['Success']
+
+        else:
+            raise ValueError(result['Error'])
+
+        data =  pd.DataFrame(data)
+        data.rename(columns={'close': 'Close','open':'Open','high':'High','low':'Low','volume':'Volume'},inplace=True)
+
+        dfs.append(data)
+
+        #printing progress 
+        from IPython.display import clear_output
+
+        clear_output()
+        print(f"[{x*'*'+' '*(26-x)}]")
+        print(f'{round((x+1)/27*100,2)} Completed')
+
+    
+
+
+    elif exchange_code == 'NFO':
+      for x in range(1,27):
+        result = self.breeze.get_historical_data_v2(interval='1second',
+                                from_date= f"{date}T07:00:00.000Z",
+                                to_date= f"{date}T07:00:00.000Z",
+                                stock_code=symbol,
+                                exchange_code=exchange_code,
+                                product_type=product_type,
+                                expiry_date=f"{expiry_date}T07:00:00.000Z",
+                                right=right,
+                                strike_price=strike_price)
+    
+    df = pd.concat(dfs,ignore_index=True)
+    return df
+
 
 
 

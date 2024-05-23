@@ -281,16 +281,47 @@ class icici_client:
 
 
     elif exchange_code == 'NFO':
+
+
       for x in range(1,27):
+
+          
+        end_time = start_time + dt.timedelta(minutes=15)
+
+        s_time = start_time.strftime('%H:%M')
+        e_time = end_time.strftime('%H:%M')
+        
+
         result = self.breeze.get_historical_data_v2(interval='1second',
-                                from_date= f"{date}T07:00:00.000Z",
-                                to_date= f"{date}T07:00:00.000Z",
+                                from_date= f"{date}T{s_time}:00.000Z",
+                                to_date= f"{date}T{e_time}:00.000Z",
                                 stock_code=symbol,
                                 exchange_code=exchange_code,
                                 product_type=product_type,
                                 expiry_date=f"{expiry_date}T07:00:00.000Z",
                                 right=right,
                                 strike_price=strike_price)
+        
+        start_time = end_time
+
+        if result['Error'] == None and result['Status']==200:
+          data = result['Success']
+
+        else:
+            raise ValueError(result['Error'])
+
+        data =  pd.DataFrame(data)
+        data.rename(columns={'close': 'Close','open':'Open','high':'High','low':'Low','volume':'Volume'},inplace=True)
+
+        dfs.append(data)
+
+        #printing progress 
+        from IPython.display import clear_output
+
+        clear_output()
+        print(f"[{x*'*'+' '*(26-x)}]")
+        print(f'{round((x+1)/27*100,2)} Completed')
+        
     
     df = pd.concat(dfs,ignore_index=True)
     return df

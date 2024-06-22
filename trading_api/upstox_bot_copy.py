@@ -12,7 +12,6 @@ from IPython.display import clear_output
 import warnings
 import os
 
-
 # Adjust display options
 pd.set_option('display.width', 1000)
 pd.set_option('display.max_columns', None)
@@ -53,12 +52,6 @@ class tradetowin:
         
     def log_update(self,type,msg,functionanem):
         self.logs.append(f"[{datetime.now()}] : [{type}] :: {functionanem}  -  {msg}")
-        filename = str(datetime.today().date())+'_upstox_bot.txt'
-        with open(filename, 'w') as file:
-            # Write each log entry in the list to a new line
-            for log in self.logs:
-                file.write(log + '\n')
-
 
     def place_order(self,symbol,price,qty,transaction_type):
 
@@ -247,7 +240,7 @@ class tradetowin:
                 print('can not join')
 
             
-            print(df.tail(20))
+            print(df)
             print('\n'.join(self.logs))
             
             
@@ -285,7 +278,7 @@ class tradetowin:
                         self.logs.append('Order Not Filled yet') if self.logs[-1]!= 'Order Not Filled yet' else 0
                         os.system('cls')
                         
-                        print(df.tail(20))
+                        print(df)
                         pprint('\n'.join(self.logs))
                         time.sleep(0.1)
                     
@@ -312,7 +305,7 @@ class tradetowin:
                         self.logs.append('Order Not Filled yet') if self.logs[-1]!= 'Order Not Filled yet' else 0
                         os.system('cls')
                         
-                        print(df.tail(20))
+                        print(df)
                         pprint('\n'.join(self.logs))
                         time.sleep(0.1)
                     
@@ -327,7 +320,7 @@ class tradetowin:
         
         else:
             
-            print(df.tail(20))
+            print(df)
             pprint('\n'.join(self.logs))
             
 

@@ -1,0 +1,16 @@
+[2024-06-24 09:40:44.295220] : [INFO] :: Sell Signal  -  Sell Condition Met. Selling at 109.65
+[2024-06-24 09:40:44.436672] : [INFO] :: place_order  -  Order Api Called.Placing Order at Price-109.65. {'data': {'order_id': '240624025180945'}, 'status': 'success'}.
+[2024-06-24 09:40:44.529659] : [INFO] :: Sell While else loop  -  Order Filled at Price 109.65
+[2024-06-24 09:40:44.636768] : [INFO] :: place_order  -  Order Api Called.Placing Order at Price-111.65. {'data': {'order_id': '240624025180962'}, 'status': 'success'}.
+[2024-06-24 09:40:44.638689] : [INFO] :: Buy Signal  -  Placed a call Sell order at Target Price = 111.65
+[2024-06-24 10:00:28.868697] : [INFO] :: Sell Signal  -  Sell Condition Met. Selling at 84.85
+[2024-06-24 10:00:28.982722] : [INFO] :: place_order  -  Order Api Called.Placing Order at Price-84.85. {'data': {'order_id': '240624025258889'}, 'status': 'success'}.
+[2024-06-24 10:00:29.080457] : [INFO] :: Sell While else loop  -  Order Filled at Price 84.85
+[2024-06-24 10:00:29.183886] : [INFO] :: place_order  -  Order Api Called.Placing Order at Price-86.85. {'data': {'order_id': '240624025258906'}, 'status': 'success'}.
+[2024-06-24 10:00:29.186780] : [INFO] :: Buy Signal  -  Placed a call Sell order at Target Price = 86.85
+[2024-06-24 11:45:01.637979] : [INFO] :: Sell Signal  -  Sell Condition Met. Selling at 54.0
+[2024-06-24 11:45:01.772797] : [INFO] :: place_order  -  Order Api Called.Placing Order at Price-54.0. {'data': {'order_id': '240624025605621'}, 'status': 'success'}.
+[2024-06-24 11:45:01.776842] : [INFO] :: Buy Signal  -  Placed a put buying order at Price = 54.0,
+[2024-06-24 11:45:21.262015] : [INFO] :: Sell While else loop  -  Order Filled at Price 54.0
+[2024-06-24 11:45:21.375012] : [INFO] :: place_order  -  Order Api Called.Placing Order at Price-56.0. {'data': {'order_id': '240624025606520'}, 'status': 'success'}.
+[2024-06-24 11:45:21.377992] : [INFO] :: Buy Signal  -  Placed a call Sell order at Target Price = 56.0

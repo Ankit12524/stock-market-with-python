@@ -41,6 +41,7 @@ class tradetowin:
         self.data_store = {}
         self.symbols = symbols
         self.last_order_time = datetime.now()
+        self.quick_price = 0
 
 
         #login details
@@ -192,6 +193,129 @@ class tradetowin:
         except Exception as e:
             self.log_update('Error',e,'aggregate_to_1min')
 
+    def place_quick_order(self,quick_price,qty,type):
+        quick_price = self.quick_price
+        self.place_order(self.symbols[2],quick_price,qty,type)
+
+
+    def strategy_option(self,message):
+
+        symbol = self.symbols[2]
+
+        try :
+            ltp = message['feed'][symbol]['ff']['marketFF']['ltpc']['ltp']
+            print('got ltp : ',ltp)
+            self.quick_price = ltp
+            print('set ltp : ',self.quick_price)
+            
+        except Exception as e:
+            print('Got an Exception in setting price {e}')
+
+
+        #defining variables
+
+
+    def strategy_nifty(self,df):
+
+        if len(df)>self.length:
+            super = ta.supertrend(df['high'],df['low'],df['close'],self.length,3)
+            try:
+                df = df.join(super[[f'SUPERT_{self.length}_3.0',f"SUPERTd_{self.length}_3.0"]])
+            except Exception as e:
+                print('can not join')
+
+            
+            print(df.tail(20))
+            print('\n'.join(self.logs))
+            print('current time : ',datetime.now())
+            
+            
+
+            #defining latest variables
+            candle_time = df.index[-1]
+            diff = (candle_time - self.last_order_time) >= timedelta(minutes=3)
+            close = df['close'][-1]
+            ce_close = df['ce_close'][-1]
+            ce_volume = df['ce_volume'][-1]
+            pe_close = df['pe_close'][-1]
+            pe_volume = df['pe_volume'][-1]
+            super = df[f'SUPERT_{self.length}_3.0'][-1]
+
+
+            #previuos candle variables
+            close_prev = df['close'][-2]
+            super_prev = df[f'SUPERT_{self.length}_3.0'][-2]
+
+            if diff:
+
+                #buy signal
+                if super_prev > close_prev and super < close :
+
+                    self.position = True
+                    self.last_order_time = datetime.now()
+                    self.log_update('INFO',f'Buy Condition Met. Buying at {ce_close}','Buy Signal')
+                    orderid = self.place_order(self.symbols[1],ce_close,25,'BUY')
+                    self.log_update('INFO',f'Placed a call buying order at Price = {ce_close},','Buy Signal')
+
+
+                    while not self.check_order_status(orderid,self.order_book()):
+                        
+                        
+                        self.logs.append('Order Not Filled yet') if self.logs[-1]!= 'Order Not Filled yet' else 0
+                        os.system('cls')
+                        
+                        print(df.tail(20))
+                        pprint('\n'.join(self.logs))
+                        time.sleep(0.1)
+                    
+                    else:
+                        self.logs.pop()
+                        self.log_update('INFO',f'Order Filled at Price {ce_close}','Buy While Else Loop')
+                        self.place_order(self.symbols[1],ce_close+2,25,'SELL')
+                        self.log_update('INFO',f'Placed a call Sell order at Target Price = {ce_close+2}','Buy Signal')
+                        #os.system('cls')                  
+                    
+
+                #sell signal
+                elif super_prev < close_prev and super > close :
+
+                    self.position = True
+                    self.last_order_time = datetime.now()
+                    self.log_update('INFO',f'Sell Condition Met. Selling at {pe_close}','Sell Signal')
+                    orderid = self.place_order(self.symbols[2],pe_close,25,'BUY')
+                    self.log_update('INFO',f'Placed a put buying order at Price = {pe_close},','Buy Signal')
+
+                    while not self.check_order_status(orderid,self.order_book()):
+                        
+
+                        self.logs.append('Order Not Filled yet') if self.logs[-1]!= 'Order Not Filled yet' else 0
+                        os.system('cls')
+                        
+                        print(df.tail(20))
+                        pprint('\n'.join(self.logs))
+                        time.sleep(0.1)
+                    
+                    else:
+                        self.logs.pop()
+                        self.log_update('INFO',f'Order Filled at Price {pe_close}','Sell While else loop')
+                        self.place_order(self.symbols[2],pe_close+2,25,'SELL')
+                        self.log_update('INFO',f'Placed a call Sell order at Target Price = {pe_close+2}','Buy Signal')   
+                    
+
+            
+        
+        else:
+            
+            print(df.tail(40))
+            pprint('\n'.join(self.logs))
+            print('Current Time : ',datetime.now())
+    def on_message2(self,message):
+
+
+        self.strategy_option(message)
+
+
+
     def on_message(self,message):
 
         
@@ -237,98 +361,11 @@ class tradetowin:
         except Exception as e:
             print('error in 4th block')
             print(e)
+
+        
         
 
-        if len(df)>self.length:
-            super = ta.supertrend(df['high'],df['low'],df['close'],self.length,3)
-            try:
-                df = df.join(super[[f'SUPERT_{self.length}_3.0',f"SUPERTd_{self.length}_3.0"]])
-            except Exception as e:
-                print('can not join')
-
-            
-            print(df.tail(20))
-            print('\n'.join(self.logs))
-            
-            
-
-            #defining latest variables
-            candle_time = df.index[-1]
-            diff = (candle_time - self.last_order_time) >= timedelta(minutes=3)
-            close = df['close'][-1]
-            ce_close = df['ce_close'][-1]
-            ce_volume = df['ce_volume'][-1]
-            pe_close = df['pe_close'][-1]
-            pe_volume = df['pe_volume'][-1]
-            super = df[f'SUPERT_{self.length}_3.0'][-1]
-
-
-            #previuos candle variables
-            close_prev = df['close'][-2]
-            super_prev = df[f'SUPERT_{self.length}_3.0'][-2]
-
-            if diff:
-
-                #buy signal
-                if super_prev > close_prev and super < close :
-
-                    self.position = True
-                    self.last_order_time = datetime.now()
-                    self.log_update('INFO',f'Buy Condition Met. Buying at {ce_close}','Buy Signal')
-                    orderid = self.place_order(self.symbols[1],ce_close,25,'BUY')
-                    self.log_update('INFO',f'Placed a call buying order at Price = {ce_close},','Buy Signal')
-
-
-                    while not self.check_order_status(orderid,self.order_book()):
-                        
-                        
-                        self.logs.append('Order Not Filled yet') if self.logs[-1]!= 'Order Not Filled yet' else 0
-                        os.system('cls')
-                        
-                        print(df.tail(20))
-                        pprint('\n'.join(self.logs))
-                        time.sleep(0.1)
-                    
-                    else:
-                        self.logs.pop()
-                        self.log_update('INFO',f'Order Filled at Price {ce_close}','Buy While Else Loop')
-                        self.place_order(self.symbols[1],ce_close+1,25,'SELL')
-                        self.log_update('INFO',f'Placed a call Sell order at Target Price = {ce_close+1}','Buy Signal')
-                        #os.system('cls')                  
-                    
-
-                #sell signal
-                elif super_prev < close_prev and super > close :
-
-                    self.position = True
-                    self.last_order_time = datetime.now()
-                    self.log_update('INFO',f'Sell Condition Met. Selling at {pe_close}','Sell Signal')
-                    orderid = self.place_order(self.symbols[2],pe_close,25,'BUY')
-                    self.log_update('INFO',f'Placed a put buying order at Price = {pe_close},','Buy Signal')
-
-                    while not self.check_order_status(orderid,self.order_book()):
-                        
-
-                        self.logs.append('Order Not Filled yet') if self.logs[-1]!= 'Order Not Filled yet' else 0
-                        os.system('cls')
-                        
-                        print(df.tail(20))
-                        pprint('\n'.join(self.logs))
-                        time.sleep(0.1)
-                    
-                    else:
-                        self.logs.pop()
-                        self.log_update('INFO',f'Order Filled at Price {pe_close}','Sell While else loop')
-                        self.place_order(self.symbols[2],pe_close+2,25,'SELL')
-                        self.log_update('INFO',f'Placed a call Sell order at Target Price = {pe_close+2}','Buy Signal')   
-                    
-
-            
         
-        else:
-            
-            print(df.tail(20))
-            pprint('\n'.join(self.logs))
             
 
     def on_open(self,symbol=False):
@@ -342,7 +379,7 @@ class tradetowin:
 
         # Handle incoming market data messages\
         self.streamer.on('open',self.on_open)
-        self.streamer.on("message", self.on_message)
+        self.streamer.on("message", self.on_message2)
         self.streamer.connect()
 
     def stop(self,symbol=False):
@@ -354,13 +391,13 @@ class tradetowin:
 
 
 #symbols
-ac = 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIzWUFRTFkiLCJqdGkiOiI2Njc0ZmM2ZDkzZDZhMjQ3YTExODE1MTUiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzE4OTQyODI5LCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3MTkwMDcyMDB9.g_hzM3QkuIxSByynz0wLn0YNdApo1rzUSyaXNVApWgE'
-nifty_23700_ce = 'NSE_FO|64394'
-nifty_23400_pe = 'NSE_FO|64371'
+ac = 'eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiIzWUFRTFkiLCJqdGkiOiI2Njc4ZWNmMzdjNmJiMTM2ZWFhZDdiNzciLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaWF0IjoxNzE5MjAxMDExLCJpc3MiOiJ1ZGFwaS1nYXRld2F5LXNlcnZpY2UiLCJleHAiOjE3MTkyNjY0MDB9.yaPIU16J3-UB8oN5J-jG90vhosmtDkL6TUDN-o_kTMA'
+nifty_23500_ce = 'NSE_FO|64370'
+nifty_23500_pe = 'NSE_FO|64371'
 nifty = 'NSE_INDEX|Nifty 50'
 
 
-demo = tradetowin(ac,[nifty,nifty_23700_ce,nifty_23400_pe])
+demo = tradetowin(ac,[nifty,nifty_23500_ce,nifty_23500_pe])
 
 demo.start()
 
